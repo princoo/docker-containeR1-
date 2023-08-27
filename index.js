@@ -75,7 +75,7 @@ mongoose
    // useCreateIndex: true,
    // useFindAndModify:true
   })
-  .then(console.log("Connected to MongoDB"))
+  .then(console.log(`Connected to MongoDB URL: ${process.env.MONGODB_URI}`))
   .catch((err) => console.log(err));
 
 
