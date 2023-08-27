@@ -1,0 +1,81 @@
+SignUp.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Brand-Blaise</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel='stylesheet' href='./UI/css/SignUp.css' style='text/css'/>
+        <script type="text/javascript" src="./UI/js/SignUp.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+      <body>
+      <nav id="head">
+        <div class="logo" id="text" onclick="func()">
+          <a href="./index.html" ><h2>Tekki-rw</h2></a>
+        </div>
+        <div class="log" id = "navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <a href="./AboutMe.html" class="button-up" ></a>
+            <a href="./Portfolio.html" class="button-up"></button></a>
+            <a href="./Skills.html" class="button-up"></button></a>
+            <a href="./Blog.html" class="button-up"></button></a>
+            <a href="./ContactMe.html" class="button-up"></button></a>
+            <a href="./UI/pages/LogIn.html" class="button-up" style="color: #0A79B8;">Log In</a>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+   <div class="container">
+    <div class="mission">
+       <div class="job">Let's collaborate,</div>
+       <div class="company">Create an account. Get a personal<br> access to the content of the <br> website, and together let’s create <br> something special.</div>    
+     </div>
+     
+     <div class="services">
+        <form action="" id="signUpForm">
+            <div class="nav">
+              <div id="confirm" style ="color:rgb(8, 221, 8); font-size: 20px; text-align: center; display:none"><span class="material-symbols-outlined">
+                check_circle
+                </span> Account Created successfully</div>
+                <div id="wrong" style ="color:rgb(221, 8, 8); font-size: 20px; text-align: center; display:none"><span class="material-symbols-outlined">
+                  </span> Account Already Exists</div>
+              <div class="email">Name</div>
+                <input class="input" id="name" type='name' required></input>
+                
+            </div>
+            <div class="nav">
+              <div class="email">Email</div>
+                <input class="input" id="email" type='email' required></input>
+                
+            </div>
+            <div class="nav">
+              <div class="email">Password</div>
+                <input class="input" id="password" type='password' required></input>
+                <div id="emailp" style="color: red;"></div> 
+            </div>
+            
+         
+     <div class="send">
+         <button class="button-cv" type="button" value="" name="Sign up" onclick="SignUp()">Join</button>
+         </div>
+        </form>
+        </div>
+     </div>
+    </form>
+    </div>
+    <script>
+
+      var navLinks = document.getElementById('navLinks');
+      function showMenu() {
+        navLinks.style.right = '0'
+      }
+      function hideMenu() {
+        navLinks.style.right = '-200px'
+      }
+    
+    </script>
+
+</body>
+</html>

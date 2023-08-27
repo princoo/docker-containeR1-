@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Brand-Blaise</title>
+        <link rel='stylesheet' href='../css/LogIn.css' style='text/css'/>
+        <script type="text/javascript" src="../js/LogIn.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      </head>
+      <body>
+      <nav id="head">
+        <div class="logo" id="text" onclick="func()">
+          
+          <a href="../../index.html" ><h2>Tekki-rw</h2></a>
+        </div>
+        <div class="log" id = "navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+            <a href="./AboutMe.html" class="button-up" ></a>
+            <a href="./Portfolio.html" class="button-up"></button></a>
+            <a href="./Skills.html" class="button-up"></button></a>
+            <a href="./Blog.html" class="button-up"></button></a>
+            <a href="./ContactMe.html" class="button-up"></button></a>
+            <a href="./LogIn.html" class="button-up" style="color: #0A79B8;">Log In</a>
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+   <div class="container">
+    <div class="hi">Welcome back.</div>
+     <div class="services">
+        <div class="">       
+        <div class="nav">
+            <div class="email">Email</div>
+            <input class="input" type='email' id="email" placeholder='Email' required></input>
+        </div>
+        <div class="nav">
+            <div class="email">Password</div>
+            <input class="input" type='password' id="password" placeholder='Password' required></input>
+        </div>
+         <button class="button-cv" type="submit" name="submit" onclick="Login()">LOGIN</button>
+         </div>
+     </div>
+     <div class="nav2">
+     <div class="account">Not Registered Yet?</div><div class="account2"><a href="../../index.html" style="color:#0A79B8 ;"><u>Create an account</u></a></div>
+    </div>
+    </div>
+    <script>
+
+      var navLinks = document.getElementById('navLinks');
+      function showMenu() {
+        navLinks.style.right = '0'
+      }
+      function hideMenu() {
+        navLinks.style.right = '-200px'
+      }
+    
+    </script>
+
+
+
+</body>
+</html>
