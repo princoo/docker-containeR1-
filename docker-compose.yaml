@@ -10,7 +10,7 @@ services:
       - db
     environment:
       PORT: 8000
-      MONGODB_URI: 'mongodb: //db:27017/loggs'
+      MONGODB_URI: 'mongodb://db:27017/loggs'
       WAIT_HOSTS: db:27017
     image: princoo/demo-app
 
