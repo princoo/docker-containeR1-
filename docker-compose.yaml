@@ -10,6 +10,7 @@ services:
       - db
     environment:
       WAIT_HOSTS: db:27017
+    image: princoo/demo-app
 
   db:
     image: 'mongo:latest'
@@ -20,5 +21,4 @@ services:
       MONGO_INITDB_DATABASE: loggs
       MONGO_INITDB_USERNAME: admin
       MONGO_INITDB_PASSWORD: secret
-
 
