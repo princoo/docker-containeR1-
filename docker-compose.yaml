@@ -9,9 +9,9 @@ services:
     depends_on:
       - db
     environment:
-      - PORT: 8000
-      - MONGO_URL=mongodb: //db:27017/loggs
-      - WAIT_HOSTS: db:27017
+      PORT: 8000
+      MONGO_URL=mongodb: //db:27017/loggs
+      WAIT_HOSTS: db:27017
     image: princoo/demo-app
 
   db:
