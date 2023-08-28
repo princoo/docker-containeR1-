@@ -8,7 +8,9 @@
     "start": "nodemon index.js",
     "test": "nyc mocha tests/ --recursive --exit --timeout 80000",
     "newDB":"node dockerScripts/newInstance.js",
-    "stopDB":"node dockerScripts/stopInstance.js"
+    "stopDB":"node dockerScripts/stopInstance.js",
+    "startcompose":"docker-compose up -d",
+    "stopcompose":"docker-compose down"
   },
   "keywords": [],
   "author": "",
